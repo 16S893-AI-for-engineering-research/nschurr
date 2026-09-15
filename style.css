@@ -28,6 +28,7 @@ h1 {
 
 .nav-buttons {
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -91,37 +92,37 @@ main.page-content {
   stroke-linecap: round;
   stroke-dasharray: 140;
   stroke-dashoffset: 140;
-  animation: grow-stem 1.2s ease-out forwards;
+  animation: grow-stem 2.4s ease-out forwards;
 }
 
 .leaf {
   fill: #5c9e6c;
   opacity: 0;
   transform-origin: center;
-  animation: fade-in 0.6s ease-out forwards;
-  animation-delay: 0.8s;
+  animation: fade-in 1.2s ease-out forwards;
+  animation-delay: 1.6s;
 }
 
 .petal {
   transform-origin: 110px 60px;
   opacity: 0;
   transform: scale(0);
-  animation: bloom 0.5s ease-out forwards;
+  animation: bloom 1s ease-out forwards;
   cursor: pointer;
   transition: fill 0.4s ease;
 }
 
-g:nth-of-type(1) .petal { animation-delay: 1.2s; }
-g:nth-of-type(2) .petal { animation-delay: 1.3s; }
-g:nth-of-type(3) .petal { animation-delay: 1.4s; }
-g:nth-of-type(4) .petal { animation-delay: 1.5s; }
-g:nth-of-type(5) .petal { animation-delay: 1.6s; }
-g:nth-of-type(6) .petal { animation-delay: 1.7s; }
+g:nth-of-type(1) .petal { animation-delay: 2.4s; }
+g:nth-of-type(2) .petal { animation-delay: 2.6s; }
+g:nth-of-type(3) .petal { animation-delay: 2.8s; }
+g:nth-of-type(4) .petal { animation-delay: 3.0s; }
+g:nth-of-type(5) .petal { animation-delay: 3.2s; }
+g:nth-of-type(6) .petal { animation-delay: 3.4s; }
 
 .center {
   opacity: 0;
-  animation: fade-in 0.5s ease-out forwards;
-  animation-delay: 1.8s;
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 3.6s;
 }
 
 @keyframes grow-stem {
