@@ -102,7 +102,7 @@ main.page-content {
 }
 
 .petal {
-  transform-origin: 110px 90px;
+  transform-origin: 110px 60px;
   opacity: 0;
   transform: scale(0);
   animation: bloom 0.5s ease-out forwards;
@@ -110,12 +110,12 @@ main.page-content {
   transition: fill 0.4s ease;
 }
 
-.petal:nth-of-type(1) { animation-delay: 1.2s; }
-.petal:nth-of-type(2) { animation-delay: 1.3s; }
-.petal:nth-of-type(3) { animation-delay: 1.4s; }
-.petal:nth-of-type(4) { animation-delay: 1.5s; }
-.petal:nth-of-type(5) { animation-delay: 1.6s; }
-.petal:nth-of-type(6) { animation-delay: 1.7s; }
+g:nth-of-type(1) .petal { animation-delay: 1.2s; }
+g:nth-of-type(2) .petal { animation-delay: 1.3s; }
+g:nth-of-type(3) .petal { animation-delay: 1.4s; }
+g:nth-of-type(4) .petal { animation-delay: 1.5s; }
+g:nth-of-type(5) .petal { animation-delay: 1.6s; }
+g:nth-of-type(6) .petal { animation-delay: 1.7s; }
 
 .center {
   opacity: 0;
