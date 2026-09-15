@@ -20,8 +20,9 @@ h1 {
 
 .subtitle {
   color: #666;
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  max-width: 420px;
   text-align: center;
 }
 
@@ -79,8 +80,8 @@ main.page-content {
 }
 
 #flower-svg {
-  width: 220px;
-  height: 260px;
+  width: 320px;
+  height: 380px;
 }
 
 .stem {
