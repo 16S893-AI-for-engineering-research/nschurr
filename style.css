@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #fdfcf8;
+  color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: #4a7c59;
+  color: white;
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.nav-buttons a:hover {
+  background: #3a6347;
+  transform: translateY(-2px);
+}
+
+.back-link {
+  margin-top: 2.5rem;
+  display: inline-block;
+  color: #4a7c59;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 640px;
+  text-align: center;
+}
+
+main.page-content {
+  text-align: left;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+/* Flower animation */
+#flower-wrap {
+  margin: 1rem 0;
+}
+
+#flower-svg {
+  width: 220px;
+  height: 260px;
+}
+
+.stem {
+  fill: none;
+  stroke: #4a7c59;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 140;
+  stroke-dashoffset: 140;
+  animation: grow-stem 1.2s ease-out forwards;
+}
+
+.leaf {
+  fill: #5c9e6c;
+  opacity: 0;
+  transform-origin: center;
+  animation: fade-in 0.6s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.petal {
+  transform-origin: 110px 90px;
+  opacity: 0;
+  transform: scale(0);
+  animation: bloom 0.5s ease-out forwards;
+  cursor: pointer;
+  transition: fill 0.4s ease;
+}
+
+.petal:nth-of-type(1) { animation-delay: 1.2s; }
+.petal:nth-of-type(2) { animation-delay: 1.3s; }
+.petal:nth-of-type(3) { animation-delay: 1.4s; }
+.petal:nth-of-type(4) { animation-delay: 1.5s; }
+.petal:nth-of-type(5) { animation-delay: 1.6s; }
+.petal:nth-of-type(6) { animation-delay: 1.7s; }
+
+.center {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes grow-stem {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bloom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
